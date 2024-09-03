@@ -1,6 +1,11 @@
 /* changed the background color of the entire page to #D5E1EF*/
 /* I used rem instead of px for accessibility*/
 body {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height:100vh;
   background-color: #d5e1ef;
   box-sizing: content-box;
 }
@@ -8,11 +13,7 @@ body {
 #white-card {
   position:relative;
   top: 14.41rem;
-  right:35rem;
-  bottom:14.41rem;
-  left: 43.4375rem;
-  width:20rem;
-  height:31.19rem;
+  padding-bottom:0.125rem;
   border-radius: 0.625rem;
   background-color: #ffffff;
   box-shadow: 0px 25px 25px 0px rgb(0, 0, 0, 0.05);
@@ -58,7 +59,6 @@ p {
   position:relative;
   top: 15.44rem;
   bottom: -20.50rem;
-  left: 43.4375rem;
   width:20rem;
   height:31.19rem;
   text-align: center;
@@ -73,14 +73,11 @@ p {
 @media (width <= 375px) {
   #white-card { 
   position:fixed; 
-  right:1.875rem;
-  left: 1.875rem;
   }
 
   .attribution{
    position:fixed;
    margin-top:30.81rem;
-   left:1.25rem;
   }
   
 }
